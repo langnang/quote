@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quote</title>
+
+  <link rel="stylesheet" href="./../../.storage/css/app.css">
+
+</head>
+
+<body>
+  <div id="app" class="container d-flex flex-column justify-content-center" style="height: 100vh;">
+    <div class="jumbotron text-center align-items-center my-0">
+      <h1 class="display-4">Quote</h1>
+      <h2>
+        <span class="badge badge-pill badge-primary">
+          Primary
+          <span aria-hidden="true">&times;</span>
+        </span>
+        <span class="badge badge-pill badge-secondary">Secondary
+          <span aria-hidden="true">&times;</span>
+        </span>
+        <span class="badge badge-pill badge-success">Success
+          <span aria-hidden="true">&times;</span>
+
+        </span>
+        <span class="badge badge-pill badge-danger">Danger
+          <span aria-hidden="true">&times;</span>
+
+        </span>
+        <span class="badge badge-pill badge-warning">Warning
+          <span aria-hidden="true">&times;</span>
+
+        </span>
+        <span class="badge badge-pill badge-info">Info
+          <span aria-hidden="true">&times;</span>
+
+        </span>
+        <span class="badge badge-pill badge-light">Light
+          <span aria-hidden="true">&times;</span>
+
+        </span>
+        <span class="badge badge-pill badge-dark">Dark
+          <span aria-hidden="true">&times;</span>
+
+        </span>
+      </h2>
+      <hr>
+      <p class="lead">...</p>
+    </div>
+  </div>
+  <script src="./../../.storage/lib/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./../../.storage/lib/mockjs/1.1.0/mock-min.js"></script>
+  <script>
+    $(document).ready(function () {
+      const { Random } = Mock;
+      $(".lead").text(Random.csentence());
+    })
+  </script>
+</body>
+
+</html>
